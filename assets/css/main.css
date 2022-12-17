@@ -63,6 +63,7 @@ header p {
     border: .2rem solid rgb(255, 255, 255);
     box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .3);
     text-align: center;
+    cursor: pointer;
 }
 
 .container .box-links img {
@@ -76,9 +77,14 @@ header p {
     font-weight: 500;
 }
 
+.container a {
+    color: #FFFFFF;
+}
+
 .container .box-links:hover {
     background: #ffffff34;
 }
+
 
 footer {
     padding: 1rem 0;
