@@ -7,18 +7,20 @@
 :root {
     --text-color: #FFFFFF;
     --bg-url: url('./assets/bg-mobile.svg');
-    --stoke-color: rgba(255, 255, 255, 0.5);
+    --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url('./assets/moon-stars.svg');
 }
 
 .light {
     --text-color: #000000;
     --bg-url: url('./assets/bg-mobile-light.svg');
-    --stoke-color: rgba(0, 0, 0, 0.5);
+    --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url('./assets/sun.svg');
 }
 
@@ -37,7 +39,7 @@ body * {
 #container {
     width: 100%;
     max-width: 588px;
-    margin: 56px auto 0px auto;
+    margin: 56px auto 0px;
     padding: 0 24px;
 } 
 
@@ -90,7 +92,7 @@ body * {
 }
 
 #switch button:hover {
-    outline: 8px solid var(--stoke-color);
+    outline: 8px solid var(--stroke-color);
 }
 
 #switch span {
@@ -98,7 +100,7 @@ body * {
     width: 64px;
     height: 24px;
     background: var(--surface-color);
-    border: 1px solid var(--stoke-color);
+    border: 1px solid var(--stroke-color);
     border-radius: 9999px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -122,7 +124,7 @@ ul li a {
     padding: 1rem 1.5rem;
 
     background: var(--surface-color);
-    border: 1px solid var(--stoke-color);
+    border: 1px solid var(--stroke-color);
     border-radius: .5rem;
 
     backdrop-filter: blur(4px);
