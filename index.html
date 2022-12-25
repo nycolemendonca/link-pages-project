@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nycole | Linktree</title>
+
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bb79f74918.js" crossorigin="anonymous"></script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <section>
-        <header>
-            <img src="assets/img/perfil.png" alt="Foto de Perfil de Nycole">
-           
-            <h1 class="title">Nycole Mendonça</h1>
-            
-            <p class="subtitle">Desenvolvedora Front-End | Graduanda em Engenharia de Telecomunicações</p>
-        </header>
-        
-        <main>
-            <div class="container">
+    <div id="container">
+        <div id="profile">
+            <img src="assets/avatar.png" alt="Imagem de Perfil de Nycole Mendonça">
+
+            <p>@nycoleeee1</p>
+            <p class="subtitle">Desenvolvedora Front-End | Graduanda - Eng. de Telecomunicações</p>
+        </div>
+
+        <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+        </div>
+
+        <ul>
+            <li>
                 <a href="#" target="_blank">
-                    <div class="box-links">
-                        <img src="assets/img/web-design.png" alt="Portfolio Icon">
-                        Portfolio
-                    </div>
+                    <i class="fa-brands fa-github"></i>
+                    Github
                 </a>
-                
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    Linkedin
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fa-solid fa-sitemap"></i>
+                    Portifólio
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+            </li>
+        </ul>
 
-                <a href="https://github.com/nycolemendonca" target="_blank">
-                    <div class="box-links">
-                        <img src="assets/img/github.png" alt="Github Icon">
-                        Github
-                    </div>
-                </a>
-
-                <a href="http://www.linkedin.com/in/nycolemendonca/" target="_blank">
-                    <div class="box-links">
-                        <img src="assets/img/linkedin.png" alt="Linkedin Icon">
-                        Linkedin
-                    </div>
-                </a>
-                
-                <a href="https://www.instagram.com/nycoleeee1/" target="_blank">
-                    <div class="box-links">
-                        <img src="assets/img/instagram.png" alt="Instagram Icon">
-                        Instagram
-                    </div>
-                </a>
-            </div>
-        </main>
         <footer>
-            <p>Coded by Nycole Mendonça</p>
+            Feito com ♥ por Nycole Mendonça
         </footer>
-    </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
